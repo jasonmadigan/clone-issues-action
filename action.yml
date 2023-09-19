@@ -1,0 +1,15 @@
+name: 'Clone GitHub Issues Action'
+description: 'Clone GitHub issues in a repository by label'
+inputs:
+  labelToCopy:
+    description: 'Label of issues to copy'
+    required: true
+  addLabel:
+    description: 'Label to add to duplicated issues'
+    required: false
+  labelToIgnore:
+    description: 'Ignore issues with this label'
+    required: false
+runs:
+  using: 'node16'
+  main: 'index.js'
